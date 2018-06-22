@@ -9,10 +9,21 @@
   </ul> -->
   User selected the following input:
   <br>
-  {{ formData.Make }} {{ formData.Year }} {{ formData.gender }} with <p id = "demo"></p> on {{ formData.to }}
-
+  {{ formData.Make }} {{ formData.Year }} {{ formData.gender }} with <p id = "demo"></p> on {{ formData.to }} 
+  User will get <p id= "c"></p> discount.
 
   <script>
+    if(FormData.to.getDate%2 ==1 ){
+      var discount = "30%";
+    }else{
+      discount = "40%";
+    }
+    document.getElementById("c").innerHTML = discount;
+
+    </script>
+
+
+  <!-- <script>
       function myFunction() {
           var x = document.getElementById("mySelect").value;
           document.getElementById("demo").innerHTML = x;
@@ -20,4 +31,4 @@
       </script>
 
 
-
+ -->
