@@ -1,0 +1,23 @@
+
+  <!-- Congratulations {{ formData.firstName }}  {{ formData.lastName }}, your formData has been submitted with the folllowing details
+  
+  <h1>Summary</h1>
+  <ul>
+    <li>Gender: {{ formData.gender }}</li>
+    <li>Age:  {{ formData.age }}</li>
+    <li>Number of Tickets: {{ formData.numberOfTickets }}</li>
+  </ul> -->
+  User selected the following input:
+  <br>
+  {{ formData.Make }} {{ formData.Year }} {{ formData.gender }} with <p id = "demo"></p> on {{ formData.to }}
+
+
+  <script>
+      function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          document.getElementById("demo").innerHTML = x;
+      }
+      </script>
+
+
+
